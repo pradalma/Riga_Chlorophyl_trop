@@ -48,6 +48,7 @@ New code change
                 
                 
  -------------------------------------------
+ -------------------------------------------
  in the exec_hpcs
  
  edited  compile_CM2M_compile.csh to point to Riga_Chlorophyl_trop
