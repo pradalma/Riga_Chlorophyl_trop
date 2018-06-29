@@ -91,4 +91,19 @@ rm .x
 rm Makefile*
 -----------------------------------------------
 execute csh
+module load openmpi/gcc/64/1.8.1
+module load openmpi/intel/1.8.4
+module load nco/4.5.2
+module load gcc
+module load slurm
+module load netcdf/intel/4.3.3.1
+module load netcdf-fortran/intel/4.4.2
+module load netcdf/gcc/64/4.3.1.1
+module load hdf5/intel
+module load udunits2
+module load zlib
+module load libjpeg
+module load libpng
+module load jasper
+
 ./compile_CM2M_compile.csh
