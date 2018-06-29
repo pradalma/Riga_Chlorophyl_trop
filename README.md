@@ -14,8 +14,8 @@ New code change
                      0.5*exp(-Thickness%dzt(i,j,k)*(0.225+0.037*wrk3(i,j,k)**0.629))
                 if (abs(Grd%yt(i,j))<30.0) then
                 wrk2(i,j,k) =                                  &
-                     0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.0513*wrk3(i,j,k)**0.668+0.71*wrk5(i,j,k)**1.13))   !GKIM fo
-rmulation
+                     0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.0513*wrk3(i,j,k)**0.668+0.71*wrk5(i,j,k)**1.13))
+                     !GKIM formulation
                 else
                 wrk2(i,j,k) =                                  &
                      0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.071*wrk3(i,j,k)**0.674)   !Manizza outside Tropics
@@ -30,8 +30,8 @@ rmulation
                             *exp(-Thickness%dzt(i,j,k)*(0.2250+0.037*wrk3(i,j,k)**0.629))
                 if (abs(Grd%yt(i,j))<30.0) then
                        wrk2(i,j,k) = wrk2(i,j,k-1) &
-                            *exp(-Thickness%dzt(i,j,k)*(0.0232+0.0513*wrk3(i,j,k)**0.668+0.71*wrk5(i,j,k)**1.13))   !GKI
-M formulation
+                            *exp(-Thickness%dzt(i,j,k)*(0.0232+0.0513*wrk3(i,j,k)**0.668+0.71*wrk5(i,j,k)**1.13))
+                            !GKIM formulation
                 else
                 wrk2(i,j,k) =                                  &
                      0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.071*wrk3(i,j,k)**0.674)   !Manizza outside Tropics
