@@ -20,7 +20,7 @@ New code change
                      !GKIM formulation
                 else
                 wrk2(i,j,k) =                                  &
-                     0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.071*wrk3(i,j,k)**0.674))   !Manizza outside Tropics
+                     0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.074*wrk3(i,j,k)**0.674))   !Manizza outside Tropics
                 endif
 
                 sw_frac_zw(i,j,k) = f_vis(i,j)*(wrk1(i,j,k) + wrk2(i,j,k))
@@ -36,7 +36,7 @@ New code change
                             !GKIM formulation
                 else
                 wrk2(i,j,k) =                                  &
-                     0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.071*wrk3(i,j,k)**0.674))   !Manizza outside Tropics
+                     0.5*exp(-Thickness%dzt(i,j,k)*(0.0232+0.074*wrk3(i,j,k)**0.674))   !Manizza outside Tropics
                 endif
                        sw_frac_zw(i,j,k)  = f_vis(i,j)*(wrk1(i,j,k) + wrk2(i,j,k))
                        sw_frac_zt(i,j,k)  = &
