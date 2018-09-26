@@ -107,3 +107,5 @@ module load libpng
 module load jasper
 
 ./compile_CM2M_compile.csh
+
+in the trop_1000yr script: change so that override_f_vis=.true.
